@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Freaky a Personal Category Bootstrap Responsive Website Template | Contact :: W3layouts</title>
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <section class="w3l-banner-main w3l-inner-page-main">
+    <div class="breadcrumb-infhny">
+      <header id="site-header" class="header-top">
+        <nav class="navbar navbar-expand-lg shift " id="header">
+          <a class="navbar-brand" href="index.html">
+            ANAS<span class="dot-1">.</span>
+          </a>
+          <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon fa fa-bars"> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link effect-3" href="about.html">About</a>
+              </li>
+              
+             <li class="nav-item active">
+                <a class="nav-link effect-3" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </header>
+
+    </div>
+    <nav id="breadcrumbs" class="breadcrumbs">
+      <div class="page-wrapper">
+        <a href="#">Home</a> » <span class="breadcrumb_last" aria-current="page">Contact</span></div>
+    </nav>
+  </section>
+
+  <!-- /contact-form -->
+  <section class="w3l-contact-main">
+    <div class="contact-infhny py-5">
+      <div class="container py-lg-3">
+        <div class="top-map">
+          <div class="map-content-9">
+            <form id="submit-form" action="">
+              <div class="form-top1">
+                <h3 class="hny-title text-center mb-0">Drop me a line</h3>
+                <p class="mb-lg-5 mb-4 text-center"> Please let me know.</p>
+                <div class="form-top">
+
+                  <div class="form-top-left">
+
+                    <input type="text" name="w3lName" id="w3lName" placeholder="Name" required="">
+                    <input type="number" name="w3lPhone" placeholder="Your phone number" required="">
+                    <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
+                    <input type="text" name="w3lSubject" id="w3lName" placeholder="Subject" required="">
+                  </div>
+                  <div class="form-top-righ">
+                    <textarea name="w3lMessage" id="w3lMessage" placeholder="Message*" required=""></textarea>
+                  </div>
+                </div>
+                <div class="text-lg-right text-center">
+                  <button type="submit">Submit Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="cont-details">
+            <ul class="address two">
+              <li><span class="fa fa-map-marker" aria-hidden="true"></span>calict.india</li>
+              <li><span class="fa fa-envelope" aria-hidden="true"></span><a
+                  href="mailto:info@example.com">aanu8148@gmail.com</a></li>
+              <li><span class="fa fa-phone" aria-hidden="true"></span>+91 8590955857</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  </section>
+  <!-- //contact-form -->
+
+  <!-- footer -->
+  <footer class="w3l-footer-16">
+    <div class="footer-content py-lg-5 py-4 text-center">
+      <div class="container">
+        <div class="row copy-right">
+          
+          <div class="col-lg-6 footer-right text-lg-right text-center">
+            
+            <div class="share-icons-footer ml-lg-4">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="https://wa.me/qr/ONU6FCTQDI2OF1"><span class="fa fa-whatsapp"></span></a>
+              <a href="https://instagram.com/anzzxx___?igshid=OGQ5ZDc2ODk2ZA=="><span class="fa fa-instagram"></span></a>
+            </div>
+          </div>
+        </div>
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+          <span class="fa fa-angle-up"></span>
+        </button>
+      </div>
+    </div>
+
+    
+    
+  
+
+ <script src="assets/js/aos.js"></script>
+ <script src="assets/js/aosindex.js"></script>
+ <script src="assets/js/bootstrap.min.js"></script>
+ <script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbxP855L1zYr8Yt3JhDFwucUvCIakmjKGTaMNAkYDl6lR4XEqB2dmzeGodtMY_Z12IGoBA/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              window.location.href="index.html"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+</body>
